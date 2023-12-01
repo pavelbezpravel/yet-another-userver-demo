@@ -1,0 +1,26 @@
+{
+  "name": "yet-another-userver-demo-env",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "yet-another-userver-demo-dev",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "llvm-vs-code-extensions.vscode-clangd",
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-python.python"
+      ]
+    }
+  },
+  "forwardPorts": [
+    8091,
+    8092
+  ],
+  "remoteUser": "builder",
+  "updateRemoteUserUID": false,
+  "workspaceFolder": "/workspaces/yet-another-userver-demo",
+  "shutdownAction": "stopCompose"
+}

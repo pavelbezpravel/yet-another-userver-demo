@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  yet-another-userver-demo-dev:
+    image: ghcr.io/userver-framework/ubuntu-userver-build-base:v2
+    container_name: yet-another-userver-demo-dev
+    command: tail -f /dev/null
+    ports:
+      - "127.0.0.1:8091:8091"
+      - "127.0.0.1:8092:8092"
+    volumes:
+      - ../:/workspaces/yet-another-userver-demo

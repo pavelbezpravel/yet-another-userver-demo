@@ -1,0 +1,11 @@
+cmake_build/
+cmake-build-debug/
+cmake-build-release/
+.devcontainer/
+docker-compose.yml
+Dockerfile
+.git/
+.gitignore
+.gitmodules
+.idea/
+.vscode/
